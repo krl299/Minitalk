@@ -6,16 +6,17 @@ CFlAGS = -Wall -Werror -Wextra
 
 GCC = gcc ${CFLAGS}
 
-all: ${NAME}
-
-${NAME}:
-	@make -C libft/ extra
-	@${GCC} server.c ${LIBFT} -o server
-	@${GCC} client.c ${LIBFT} -o client
+${NAME}:	all
+	
+all: 
+	@make -C libft extra
+	@${GCC} ${CFLAGS} server.c ${LIBFT} -o server
+	@${GCC} ${CFLAGS} client.c ${LIBFT} -o client
 
 bonus: all
 
 clean:
+	@make -C libft fclean
 	${RM} libft/libft.a server client
 
 fclean: clean

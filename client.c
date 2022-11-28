@@ -6,8 +6,14 @@
 /*   By: cmoran-l <cmoran-l@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 15:09:28 by cmoran-l          #+#    #+#             */
-/*   Updated: 2022/11/17 15:09:43 by cmoran-l         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:39:18 by cmoran-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "minitalk.h"
 
+int	main(void)
+{
+	ft_printf("%","");
+	return(0);
+}
