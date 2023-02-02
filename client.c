@@ -6,7 +6,7 @@
 /*   By: cmoran-l <cmoran-l@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 15:09:28 by cmoran-l          #+#    #+#             */
-/*   Updated: 2023/01/19 17:01:36 by cmoran-l         ###   ########.fr       */
+/*   Updated: 2023/02/02 10:47:43 by cmoran-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void	ft_send_byte(unsigned char c, int pid)
 			kill(pid, SIGUSR2);
 		else
 			kill(pid, SIGUSR1);
-		usleep(1);
+		usleep(100);
 		j--;
 	}
 }
